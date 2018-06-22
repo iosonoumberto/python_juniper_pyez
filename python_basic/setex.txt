@@ -1,0 +1,2 @@
+set interfaces {{iface}} unit {{u}} family inet address {{ip}}
+set inerfacess {{iface}} mtu {{size}}

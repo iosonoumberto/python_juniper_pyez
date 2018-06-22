@@ -1,0 +1,11 @@
+OspfIface:
+ rpc: get-ospf-neighbor-information
+ item: ospf-neighbor
+ key: neighbor-address
+ view: OspfIfaceView
+ 
+OspfIfaceView:
+ fields:
+  addr: neighbor-address
+  iface: interface-name
+  state: ospf-neighbor-state

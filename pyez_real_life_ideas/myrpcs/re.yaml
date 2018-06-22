@@ -1,0 +1,14 @@
+RoutingEngine:
+ rpc: get-route-engine-information
+ item: route-engine
+ key: slot
+ view: RoutingEngineView
+ 
+RoutingEngineView:
+ fields:
+  slot : slot
+  role : mastership-state
+  status : status
+  model : model
+  sn : serial-number
+  mem: memory-buffer-utilization

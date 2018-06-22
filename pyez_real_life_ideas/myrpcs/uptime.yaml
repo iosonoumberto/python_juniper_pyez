@@ -1,0 +1,11 @@
+Uptime:
+ rpc: get-system-uptime-information
+ item: system-uptime-information
+ key: current-time/date-time
+ view: UptimeView
+ 
+UptimeView:
+ fields:
+  time : current-time/date-time
+  bootfrom : system-booted-time/time-length
+  lastconf: last-configured-time/date-time

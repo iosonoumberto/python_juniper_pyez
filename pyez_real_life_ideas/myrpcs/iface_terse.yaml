@@ -1,0 +1,18 @@
+IfaceTerse:
+ rpc: get-interface-information
+ args:
+   terse: True
+   interface-name: '[afgx]e*'
+ item: physical-interface/logical-interface
+ key: name
+ view: IfaceTerseView
+ 
+IfaceTerseView:
+ fields:
+  name: name
+  as: admin-status
+  os: oper-status
+  family: address-family/address-family-name
+  bundle: address-family/ae-bundle-name
+  add: address-family/interface-address/ifa-local
+  

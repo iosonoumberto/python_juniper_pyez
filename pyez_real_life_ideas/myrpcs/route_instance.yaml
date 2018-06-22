@@ -1,0 +1,9 @@
+RouteInstance:
+ rpc: get-instance-information
+ item: instance-core
+ key: instance-name
+ view: RouteInstanceView
+ 
+RouteInstanceView:
+ fields:
+  name : name-instance

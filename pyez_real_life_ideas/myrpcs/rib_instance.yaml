@@ -1,0 +1,14 @@
+RibInstance:
+ rpc: get-instance-information
+ args:
+   instance-name : xxxxx
+ item: instance-core/instance-rib
+ key: irib-name
+ view: RibInstanceView
+ 
+RibInstanceView:
+ fields:
+  name : name-instance
+  act : irib-active-count
+  hold : irib-holddown-count
+  hid : irib-hidden-count

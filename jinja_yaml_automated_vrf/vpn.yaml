@@ -1,0 +1,9 @@
+instances:
+    - name: VPN1
+      type: vrf
+      rd: 192.168.100.1:21
+      rt: target:64555:601
+    - name: VPN2
+      type: vrf
+      rd: 192.168.100.1:22
+      rt: target:64555:602

@@ -1,0 +1,11 @@
+ChassisInv:
+ rpc: get-chassis-inventory
+ item: chassis/chassis-module
+ key: name
+ view: ChassisModulesView
+ 
+ChassisModulesView:
+ fields:
+  name: name
+  description: description
+  sn: serial-number

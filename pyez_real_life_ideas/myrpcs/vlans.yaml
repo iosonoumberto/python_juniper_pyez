@@ -1,0 +1,12 @@
+IfaceVlan:
+ rpc: get-interface-information
+ args:
+  interface-name : '[afxg]e*'
+ item: physical-interface
+ key: name
+ view: IfaceVlanView
+ 
+IfaceVlanView:
+ fields:
+  name : name
+  vlan : logical-interface/link-address

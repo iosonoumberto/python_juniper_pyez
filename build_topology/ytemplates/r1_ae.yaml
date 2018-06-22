@@ -1,0 +1,21 @@
+aggregates:
+    - phy: ge-0/0/0
+      agg: ae0
+    - phy: ge-0/0/1
+      agg: ae0
+    - phy: ge-0/0/2
+      agg: ae1
+    - phy: ge-0/0/3
+      agg: ae1
+    - phy: ge-0/0/4
+      agg: ae2
+    - phy: ge-0/0/5
+      agg: ae2
+
+interfaces:
+    - name: ae0
+      ip: 192.168.13.0/31
+    - name: ae1
+      ip: 192.168.14.0/31
+    - name: ae2
+      ip: 192.168.12.0/31

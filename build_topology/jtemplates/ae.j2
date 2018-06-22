@@ -1,0 +1,9 @@
+set chassis aggregated-devices ethernet device-count 10
+{%- for x in aggregates %}
+set interfaces {{ x.phy }} gigether-options 802.3ad {{ x.agg }}
+{%- endfor %}
+{%- for y in interfaces %}
+set interfaces {{ y.name }} aggregated-ether-options minimum-links 1
+set interfaces {{ y.name }} aggregated-ether-options link-speed 1g
+set interfaces {{ y.name }} unit 0 family inet address {{ y.ip }}
+{%- endfor %}

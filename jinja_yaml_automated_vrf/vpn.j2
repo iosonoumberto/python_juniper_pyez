@@ -1,0 +1,5 @@
+{%- for x in instances %}
+set routing-instances {{ x.name }} instance-type {{ x.type }}
+set routing-instances {{ x.name }} route-distinguisher {{ x.rd }}
+set routing-instances {{ x.name }} vrf-target {{ x.rt }}
+{%- endfor %}
